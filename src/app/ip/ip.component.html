@@ -1,0 +1,10 @@
+<div class="container d-flex justify-content-center mt-5">
+    <div class="row d-flex flex-column justify-content-center align-items-center w-50 bg-secondary p-5 rounded">
+      <h4>{{cityName===''?'Vui lòng nhập tên thành phố':
+              'Nhiệt độ ' + cityName + ' là: ' + httpdata.main.temp + ' độ.'
+      }}</h4>
+      <input class="form-control w-75 my-3" type="text" placeholder="Nhập tên thành phố" [(ngModel)]="txtCityName">
+      <br>
+      <button class="btn btn-success" (click)="getTemp()">Kiểm tra</button>
+    </div>
+   </div>

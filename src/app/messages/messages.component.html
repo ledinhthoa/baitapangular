@@ -1,0 +1,10 @@
+<h4>fjhfjh</h4>
+
+
+<div *ngIf="messaggeservice.messages.lengh">
+    <h4>message</h4>
+    <button class="clear"
+    (click)="messaggeservice.deletemesaage()"
+    >delete message</button>
+    <div *ngFor="let message of messaggeservice. messages">{{message}}</div>
+</div>

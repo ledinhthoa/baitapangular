@@ -1,0 +1,15 @@
+<div *ngIf="movie" class="details">
+        <h3>you select</h3>
+        <table style="width: 100%;">
+            <tr>
+                <td>name</td>
+                <input [(ngModel)]="movie.name">
+            </tr>
+            <tr>
+                    <td>releaseyear</td>
+                    <input [(ngModel)]="movie.releaseyear">
+            </tr>
+
+        </table>
+        <button (click)="goBack()">go back</button>
+    </div>
